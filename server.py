@@ -12,7 +12,7 @@ while ciclo: #Ciclo infinito, pero le puse que se cerrara cuando el cliente envi
     conexion.send(bytes("Hola como estas", "utf-8")) #De esta forma el server puede regresar un mensaje
     msg = conexion.recv(1024) # De esta forma se obtiene el mensaje que envio el cliente
     print(msg.decode("utf-8")) # Aqui se decodifica en utf-8
-    conexion.close()
+    conexion.close() # Se cierra la conexion con el cliente
     if msg.decode("utf-8") == "SALIR": # Validacion para cerrar el server usando el mensaje del cliente
         ciclo = False
 
