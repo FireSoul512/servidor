@@ -17,3 +17,4 @@ while ciclo: #Ciclo infinito, pero le puse que se cerrara cuando el cliente envi
         ciclo = False
 
 print('Adios bro XD')
+s.close()
